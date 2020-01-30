@@ -1,0 +1,409 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS Added by me */
+
+/* ClearFix */
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+/* For centering text */
+.center-text {
+    text-align: center;
+}
+
+/* For no text decoration*/
+.no-dec {
+    text-decoration: none;
+}
+
+/* Containers */
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+body {
+    line-height: 1.5;
+}
+/* header */
+.nav-header{
+    padding-bottom: 64px;
+}
+.nav-logo {
+    float: left;
+}
+.nav-links {
+    padding: 12px 0;
+    float: right;
+}
+.nav-links a, .nav-logo {
+   
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+/*Universal */
+
+* {
+    box-sizing: border-box;
+}
+/* header font  */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+.nav-links a{
+    font-size:18px;
+    font-weight: 400;
+    padding-right: 42px;
+}
+/*Setting up background */
+.header {
+    font-family: 'Raleway', sans-serif;
+    background: #b2b2b2 url("../images/banner.jpg")  no-repeat; 
+}
+
+/*Making prism */
+.prism{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 20px 46.5%;
+}
+.hero{
+    padding-bottom: 88px;
+}
+/*Hero section headings */
+.hero h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+/*Hero Section Button */
+.hero-btn {
+    font-family: 'Raleway', sans-serif;
+    background: #51BAA4;
+    color: white;
+    padding: 20px 48px;
+    border-radius: 30px;
+    border: none;
+    margin: 20px 41%;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+} 
+/* floats for main section */
+.col-1-2{
+    float:left;
+    width: 46%;
+    padding: 0 0%;
+}
+/*Image take all available space */
+.img-responsive {
+    width: 100%;
+}
+.remove-space{
+    font-size: 0;
+}
+/*buttons in main section */
+.section-btn {
+    font-family: 'Raleway', sans-serif;
+    background: white;
+    color: #51BAA4;
+    padding: 8px 30px;
+    border-radius: 30px;
+    border: 2px solid #51BAA4;
+    margin: 4px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+} 
+/*Styling articles */ 
+.first-section{
+    margin: 80px 130px;
+    background: #EEEEEE;
+}
+.first-section h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.first-section p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    line-height: 2.0;
+}
+.second-section{
+    width: 44%;
+    margin: 80px 28%;
+}
+.second-section h5{
+    font-family: 'Raleway', sans-serif;
+    color: #25383B;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.second-section p{
+    font-family: 'Raleway', sans-serif;
+    color: #25383B;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.col-1-4{
+    width: 25%;
+    float: left;
+    font-size: 0;
+}
+.gallery-section{
+    padding-bottom: 80px;
+}
+.single-section-btn{
+    font-family: 'Raleway', sans-serif;
+    background: white;
+    color: #51BAA4;
+    padding: 16px 46px;
+    border-radius: 30px;
+    border: 2px solid #51BAA4;
+    margin: 40px 38%;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/*Bottom banner section */
+.banner-footer{
+    padding-bottom: 80px;
+}
+.banner-div{
+    width: 40%;
+    margin: 0 30%;
+}
+
+/*Bottom banner and contact form headings */
+.banner-footer h2, .contact-form h2 {
+    padding-top: 80px;
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.banner-footer h3, .contact-form h3 {
+    margin: 24px 0;
+    line-height: 2.0;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+/*banner footer Button */
+.banner-footer-btn {
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+    color: white;
+    padding: 16px 46px;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin: 0 25%;
+    font-size: 20px;
+    font-weight: 500;    
+    text-transform: uppercase;
+
+    
+} 
+.banner-footer {
+    font-family: 'Raleway', sans-serif;
+    background: #b2b2b2 url("../images/pic11.jpg")  no-repeat; 
+}
+/** Contact form */
+.contact-form{
+
+    font-family: 'Raleway', sans-serif;
+    background: #1E2832;
+    padding-bottom: 30px;
+}
+.contact-div{
+    width: 72%;
+    margin: 0 14%;
+}
+/*Name and email Text input*/
+.contact-div input{
+    line-height: 2.0;
+    padding: 4px 8px;
+    color: #eeeeee;
+    font-size: 16px;
+    background: #29333C;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 1%;
+    width: 44%;
+}
+/* Message TextArea */ 
+.contact-div textarea{
+    line-height: 2.0;
+    padding: 4px 8px;
+    color: #eeeeee;
+    font-size: 16px;
+    background: #29333C;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 1%;
+    width: 91%;
+}
+/* Submit buttons */
+.float-buttons{
+    padding-top: 36px;
+}
+
+/* Submit button of contact form */
+.form-first-btn {
+    font-family: 'Raleway', sans-serif;
+    background: #51BAA4;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 33%;
+    margin-right: 3%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    float:left;
+    
+} 
+
+/* Reset button for reset button */
+.form-second-btn {
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 16px;
+    margin-right: 33%;
+    margin-left: 3%;
+    font-weight: 500;
+    text-transform: uppercase;
+    float: left;
+    
+} 
+/* hr element css */
+hr {
+    border-top: 1px solid #555555;
+    width:80%;
+    margin: 0px auto;
+}
+/* Footer css */
+.footer{
+    font-family: 'Raleway', sans-serif;
+    background: #1E2832;
+    padding: 40px 0;
+}
+/* Social Media links CSS */
+.fab{
+  color: #A5A9AD;
+  width: 20%;
+}
+.footer-nav{
+    margin: 0 25%;
+}
+.sn-links{
+    width: 50%;
+    text-align: center;
+    margin: 12px 20%;
+}
+
+.sn-links a{
+    font-size: 28px;
+}
+
+/* Copyright CSS */
+.small{
+    width: 50%; 
+    color: #9CA0A5;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 25%;
+    text-transform: uppercase;
+}
+
+u{
+    text-decoration: underline;
+}
